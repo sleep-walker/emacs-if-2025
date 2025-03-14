@@ -122,7 +122,7 @@ example:
 - efektivní klávesové zkratky
 - redefinoval interface Emacsu
 
-  
+
 * Emacs - org mode
 
 - úkoly
