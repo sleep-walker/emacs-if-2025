@@ -42,7 +42,7 @@ Tomáš Čech <sleep_walker@gnu.org>
 - Emacs je přenositelný (*NIX, macOS, Windows, Android)
 
 - ale, když upustíte od myšlenky, že Emacs je
-  editor, přiblížíte se jeho pochopení
+  editor, tak se přiblížíte jeho pochopení
 
 - Emacs je lispový interpret obalený textovým uživatelským
   interfacem a s podporou velké škály funkcí interagující s
@@ -50,21 +50,21 @@ Tomáš Čech <sleep_walker@gnu.org>
  
 * Co Emacs není?
 
-- Emacs není rychlý - je to interpret lispu, je
-  jednoprocesový (multithreading přidán v roce 2022)
-  
-- Emacs není jen jedna verze
+- Emacs není jako Vi(m)
 
-  - Vanilla, Spacemacs, Doom Emacs, Aquamacs (macOS),
-    Prelude, ...
+  - ale má 3 implementace - viper, vimpulse a evil
   
 - Emacs není intuitivní pro uživatele jiných editorů
   (vznikl dřív, než to, co považujete za defaultní ovládání
   Ctrl+C, Ctrl+V, Ctrl+S, ...)
 
-- Emacs není jako Vi(m)
+- Emacs není rychlý - je to interpret lispu, je
+  jednoprocesový (multithreading přidán v roce 2022)
 
-  - ale má 3 implementace - viper, vimpulse a evil
+- Emacs není jen jedna verze
+
+  - Vanilla, Spacemacs, Doom Emacs, Aquamacs (macOS),
+    Prelude, ...
 
 * Emacs editor
 
@@ -107,7 +107,7 @@ example:
   (progn (find-file "example.bash")
          (treesit-explore-mode))
 #+end_src
-example 2
+
 
 * Emacs dnes - language server protocol
 
@@ -116,7 +116,8 @@ example 2
 - chytré doplňování symbolů z kontextu
 - inteligentní navigace v kódu (skok na definici nebo místa, kde se symbol používá)
 - ...
-  
+
+example: v jiném okně
 * Emacs - magit
 
 - ultimátní GIT frontend
@@ -125,6 +126,7 @@ example 2
 - efektivní klávesové zkratky
 - redefinoval interface Emacsu
 
+example: v jiném okně
 * Emacs a AI
 
 - integrace s Copilot (chybí chat)
@@ -143,13 +145,14 @@ example 2
 - capture  
 - psaní dokumentace
 - literární programování
-- playbooky and jupiter nebo jupyter-like notebooky 
+- playbooky and jupyter nebo jupyter-like notebooky 
 - vědecké práce s LaTeX
 
 [[./org.org][example]]
 * Emacs extreme
 
-- logview-mode
+- logview-mode (filtrování dle úrovně, procesu, komponenty)
+- eshell (shell v elispu)
 - e-mail client (gnus, wanderlust, mew, ...)
 - Matrix (ement.el), IRC, RSS
 - [[https://github.com/kubernetes-el/kubernetes-el/blob/master/docs/assets/screenshot.png?raw=true][kubernetes-mode]], [[https://github.com/rmuslimov/jenkins.el][Jenkins-mode]], ...
