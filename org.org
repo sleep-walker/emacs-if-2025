@@ -1,0 +1,17 @@
+* Projekt na ovládnutí země
+V rámci tohoto projektu bude ovládnutá země nějakým fakt chytrým způsobem.
+
+** příprava
+*** DONE vymyslet návrh na projekt
+*** DONE zvolený jazyk - Bash
+#+begin_src bash
+  # v bashi lze napsat vše a krásně
+  killall humans
+#+end_src
+
+** realizace
+*** TODO implementace
+DEADLINE: <2025-03-15 So>
+*** TODO [#Z] testování                                         :zbytečnosti:
+
+** +finanční plán+ (nepodstatné detaily)
