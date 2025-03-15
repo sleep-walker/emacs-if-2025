@@ -34,6 +34,8 @@ Tomáš Čech <sleep_walker@gnu.org>
 
 - dále prostě Emacs
 
+- C + Lisp
+  
 - Emacs je sebedokumentující, velmi upravitelný editor
    example: C-h C-h nebo F1 F1
 
@@ -73,11 +75,11 @@ Tomáš Čech <sleep_walker@gnu.org>
 
 - podpora client/server (lokálně)
 
+- TRAMP
 * Emacs editor #2
 - módy
   
   - major - typ bufferu (c-mode, python-mode, ...)
-
     - určuje syntax, sjednocuje pohyb, definuje možnosti
     
   - minor - modifikující chování bufferu (hl-line-mode)
@@ -86,10 +88,11 @@ Tomáš Čech <sleep_walker@gnu.org>
     (global-auto-revert-mode)
 
 * Emacs dnes
-- vývoj stále probíhá
+- vývoj stále probíhá - poslední release 2025-02-23
   - native compile
   - Android port
-  - adopce externích projektů
+  - ...
+
 * Emacs dnes - tree sitter
 
 - inkrementální parser jazyka nahrazující definince syntax
@@ -101,10 +104,10 @@ Tomáš Čech <sleep_walker@gnu.org>
 
 example:
 #+begin_src elisp :results none
-  (progn (find-file "i3w-multi-monitor-utils.c")
+  (progn (find-file "example.bash")
          (treesit-explore-mode))
 #+end_src
-
+example 2
 
 * Emacs dnes - language server protocol
 
@@ -122,31 +125,37 @@ example:
 - efektivní klávesové zkratky
 - redefinoval interface Emacsu
 
+* Emacs a AI
 
+- integrace s Copilot (chybí chat)
+- integrace LLM (gptel)
+
+[[./ai.el][example]]
+   
 * Emacs - org mode
 
+- markup language
+- hypertext
 - úkoly
-- kalendář
+- kalendář + synchronizace
 - agenda
 - deníky
-- hypertext
-- synchronizace - kalendáře, JIRA
+- capture  
 - psaní dokumentace
-- playbooky and jupiter nebo jupyter-like notebooky 
 - literární programování
+- playbooky and jupiter nebo jupyter-like notebooky 
 - vědecké práce s LaTeX
+
+[[./org.org][example]]
 * Emacs extreme
 
 - logview-mode
 - e-mail client (gnus, wanderlust, mew, ...)
 - Matrix (ement.el), IRC, RSS
-- capture
-- kubernetes-mode, Jenkins-mode, ...
+- [[https://github.com/kubernetes-el/kubernetes-el/blob/master/docs/assets/screenshot.png?raw=true][kubernetes-mode]], [[https://github.com/rmuslimov/jenkins.el][Jenkins-mode]], ...
 - window manager
 - csound live music
   https://www.youtube.com/watch?v=eacyGKRBpwA
-* Emacs extreme #2
-
 
 * Emacs future!
 - Rust
@@ -156,15 +165,17 @@ example:
 
 * Dotazy?
 
-* Díky
+* Díky za pozornost
 
 https://github.com/sleep-walker/emacs-if-2025
 
 Tomáš Čech <sleep_walker@gnu.prg>
 
+[[./qrcode.png]]
 
 # Local Variables:
 # eval: (real-auto-save-mode)
 # eval: (highlight-phrase "example:" "diary")
+# eval: (org-link-preview-region)
 # fill-column: 60
 # End:
